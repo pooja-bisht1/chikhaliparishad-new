@@ -1,0 +1,22 @@
+{
+  "id": "/chikhaliparishad/",
+  "name": "चिखली नगर परिषद",
+  "short_name": "नगर परिषद",
+  "start_url": "/chikhaliparishad/",
+  "scope": "/chikhaliparishad/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ef7d00",
+  "icons": [
+    {
+      "src": "images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

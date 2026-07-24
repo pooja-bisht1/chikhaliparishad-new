@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="mr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>मागणी नोंदणी</title>
+
+<link rel="stylesheet" href="request.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="page-header">
+
+<a href="index.html" class="back-btn">
+<i class="fa-solid fa-arrow-left"></i>
+</a>
+
+<h2>मागणी नोंदणी</h2>
+
+<div></div>
+
+</header>
+
+<section class="form-section">
+
+<div class="form-card">
+
+<div class="title">
+
+<i class="fa-solid fa-file-circle-plus"></i>
+
+<h2>मागणी नोंदणी</h2>
+
+<p>कृपया खालील माहिती अचूक भरा.</p>
+
+</div>
+
+<form>
+
+    <!-- ================= पूर्ण नाव ================= -->
+
+<div class="form-group">
+
+    <label>
+        <i class="fa-solid fa-user"></i>
+        पूर्ण नाव
+    </label>
+
+    <input
+        type="text"
+        name="name"
+        placeholder="आपले पूर्ण नाव टाका"
+        required>
+
+</div>
+
+<!-- ================= मोबाईल ================= -->
+
+<div class="form-group">
+
+    <label>
+        <i class="fa-solid fa-phone"></i>
+        मोबाईल क्रमांक
+    </label>
+
+    <input
+        type="tel"
+        name="mobile"
+        placeholder="१० अंकी मोबाईल क्रमांक"
+        maxlength="10"
+        required>
+
+</div>
+
+<!-- ================= ई-मेल ================= -->
+
+<div class="form-group">
+
+    <label>
+        <i class="fa-solid fa-envelope"></i>
+        ई-मेल (ऐच्छिक)
+    </label>
+
+    <input
+        type="email"
+        name="email"
+        placeholder="example@gmail.com">
+
+</div>
+
+<!-- ================= पत्ता ================= -->
+
+<div class="form-group">
+
+    <label>
+        <i class="fa-solid fa-location-dot"></i>
+        पत्ता
+    </label>
+
+    <input
+        type="text"
+        name="address"
+        placeholder="संपूर्ण पत्ता टाका"
+        required>
+
+</div>
+
+<!-- ================= प्रभाग ================= -->
+
+<div class="form-group">
+
+    <label>
+        <i class="fa-solid fa-map-location-dot"></i>
+        प्रभाग क्रमांक
+    </label>
+
+    <select name="ward" required>
+
+        <option value="">प्रभाग निवडा</option>
+
+        <option>१</option>
+        <option>२</option>
+        <option>३</option>
+        <option>४</option>
+        <option>५</option>
+        <option>६</option>
+        <option>७</option>
+        <option>८</option>
+        <option>९</option>
+        <option>१०</option>
+
+    </select>
+
+</div>
+
+<!-- ================= मागणीचा प्रकार ================= -->
+
+<div class="form-group">
+
+    <label>
+        <i class="fa-solid fa-file-signature"></i>
+        मागणीचा प्रकार
+    </label>
+
+    <select name="request_type" required>
+
+        <option value="">मागणीचा प्रकार निवडा</option>
+
+        <option>जन्म दाखला</option>
+
+        <option>मृत्यू दाखला</option>
+
+        <option>रहिवासी दाखला</option>
+
+        <option>मालमत्ता कर</option>
+
+        <option>पाणी जोडणी</option>
+
+        <option>दुकान परवाना</option>
+
+        <option>बांधकाम परवानगी</option>
+
+        <option>इतर</option>
+
+    </select>
+
+</div>
+
+<!-- ================= मागणीचा तपशील ================= -->
+
+<div class="form-group">
+
+    <label>
+
+        <i class="fa-solid fa-pen-to-square"></i>
+
+        मागणीचा तपशील
+
+    </label>
+
+    <textarea
+        name="details"
+        rows="5"
+        placeholder="आपली मागणी येथे लिहा..."
+        required></textarea>
+
+</div>
+
+<!-- ================= कागदपत्र ================= -->
+
+<div class="form-group">
+
+    <label>
+
+        <i class="fa-solid fa-file-arrow-up"></i>
+
+        आवश्यक कागदपत्र अपलोड करा
+
+    </label>
+
+    <input
+        type="file"
+        name="document"
+        class="file-input">
+
+</div>
+
+<!-- ================= SUBMIT ================= -->
+
+<button type="submit" class="submit-btn">
+
+    <i class="fa-solid fa-paper-plane"></i>
+
+    मागणी सादर करा
+
+</button>
+
+<!-- पुढील भाग -->
+
+</form>
+
+</div>
+
+</section>
+
+</body>
+</html>

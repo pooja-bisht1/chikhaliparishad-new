@@ -1,0 +1,409 @@
+/*==============================
+        RESET
+==============================*/
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Noto Sans Devanagari',sans-serif;
+}
+
+body{
+background:#f5f5f5;
+}
+
+/*==============================
+        HEADER
+==============================*/
+
+.page-header{
+
+width:100%;
+height:75px;
+
+background:#f28b00;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:0 20px;
+
+box-shadow:0 3px 10px rgba(0,0,0,.10);
+
+}
+
+.back-btn{
+
+color:#fff;
+
+font-size:22px;
+
+text-decoration:none;
+
+}
+
+.page-header h2{
+
+color:#fff;
+
+font-size:24px;
+
+font-weight:700;
+
+}
+
+.header-space{
+
+width:24px;
+
+}
+
+/*==============================
+        HERO
+==============================*/
+
+.hero{
+
+text-align:center;
+
+padding:35px 15px;
+
+}
+
+.hero-icon{
+
+width:90px;
+height:90px;
+
+margin:auto;
+
+background:#fff;
+
+border-radius:50%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+box-shadow:0 5px 15px rgba(0,0,0,.10);
+
+}
+
+.hero-icon i{
+
+font-size:42px;
+
+color:#f28b00;
+
+}
+
+.hero h1{
+
+margin-top:18px;
+
+font-size:30px;
+
+color:#f28b00;
+
+}
+
+.hero p{
+
+margin-top:10px;
+
+color:#666;
+
+font-size:16px;
+
+line-height:28px;
+
+}
+
+/*====================================
+        PERMISSION SECTION
+====================================*/
+
+.permission-section{
+
+    width:100%;
+
+    padding:0 20px 40px;
+
+}
+
+.permission-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:22px;
+
+}
+
+/*====================================
+        CARD
+====================================*/
+
+.permission-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    border-top:5px solid #f28b00;
+
+    transition:.3s;
+
+}
+
+.permission-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+
+}
+
+.permission-card i{
+
+    font-size:46px;
+
+    color:#f28b00;
+
+    margin-bottom:15px;
+
+}
+
+.permission-card h3{
+
+    font-size:22px;
+
+    color:#333;
+
+    margin-bottom:10px;
+
+}
+
+.permission-card p{
+
+    color:#666;
+
+    line-height:24px;
+
+    margin-bottom:20px;
+
+}
+
+.permission-card a{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    background:#f28b00;
+
+    color:#fff;
+
+    padding:10px 22px;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.permission-card a:hover{
+
+    background:#d97706;
+
+}
+
+/*====================================
+        DOCUMENTS
+====================================*/
+
+.documents{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:40px auto;
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.documents h2{
+
+    text-align:center;
+
+    color:#f28b00;
+
+    margin-bottom:25px;
+
+}
+
+.documents ul{
+
+    list-style:none;
+
+}
+
+.documents li{
+
+    padding:12px 0;
+
+    border-bottom:1px solid #eee;
+
+    font-size:17px;
+
+}
+
+.documents li:last-child{
+
+    border-bottom:none;
+
+}
+
+.documents i{
+
+    color:#2fbf71;
+
+    margin-right:10px;
+
+}
+
+/*====================================
+        CONTACT
+====================================*/
+
+.contact-section{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:30px auto;
+
+}
+
+.contact-section h2{
+
+    text-align:center;
+
+    color:#f28b00;
+
+    margin-bottom:20px;
+
+}
+
+.contact-card{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.contact-card p{
+
+    margin:18px 0;
+
+    font-size:17px;
+
+    color:#555;
+
+}
+
+.contact-card i{
+
+    color:#f28b00;
+
+    margin-right:12px;
+
+}
+
+/*====================================
+        FOOTER
+====================================*/
+
+.footer{
+
+    margin-top:40px;
+
+    background:#138808;
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:18px;
+
+}
+
+.footer p{
+
+    font-size:15px;
+
+}
+
+/*====================================
+        MOBILE
+====================================*/
+
+@media(max-width:768px){
+
+.documents,
+.contact-section{
+
+width:95%;
+
+}
+
+.documents{
+
+padding:20px;
+
+}
+
+.contact-card{
+
+padding:20px;
+
+}
+
+.documents li{
+
+font-size:15px;
+
+}
+
+.contact-card p{
+
+font-size:15px;
+
+}
+
+}

@@ -1,0 +1,401 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Noto Sans Devanagari',sans-serif;
+}
+
+body{
+background:#f5f5f5;
+}
+
+.page-header{
+
+height:75px;
+
+background:#f28b00;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:0 20px;
+}
+
+.back-btn{
+
+color:#fff;
+font-size:22px;
+text-decoration:none;
+
+}
+
+.page-header h2{
+
+color:#fff;
+font-size:24px;
+
+}
+
+.header-space{
+
+width:24px;
+
+}
+
+.hero{
+
+text-align:center;
+
+padding:35px 15px;
+
+}
+
+.hero-icon{
+
+width:90px;
+height:90px;
+
+background:#fff;
+
+border-radius:50%;
+
+margin:auto;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+box-shadow:0 5px 15px rgba(0,0,0,.10);
+
+}
+
+.hero-icon i{
+
+font-size:42px;
+color:#f28b00;
+
+}
+
+.hero h1{
+
+margin-top:18px;
+color:#f28b00;
+
+}
+
+.hero p{
+
+margin-top:10px;
+color:#666;
+line-height:28px;
+
+}
+
+/*====================================
+        WATER TABLE
+====================================*/
+
+.water-schedule{
+
+    width:100%;
+
+    padding:20px;
+
+}
+
+.schedule-card{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.schedule-card h2{
+
+    text-align:center;
+
+    color:#f28b00;
+
+    margin-bottom:25px;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+table th{
+
+    background:#f28b00;
+
+    color:#fff;
+
+    padding:15px;
+
+    font-size:16px;
+
+}
+
+table td{
+
+    padding:14px;
+
+    text-align:center;
+
+    border-bottom:1px solid #eee;
+
+}
+
+table tr:hover{
+
+    background:#fff7ef;
+
+}
+
+.active{
+
+    background:#28a745;
+
+    color:#fff;
+
+    padding:5px 12px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+}
+
+.closed{
+
+    background:#dc3545;
+
+    color:#fff;
+
+    padding:5px 12px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+}
+
+/*====================================
+        MOBILE
+====================================*/
+
+@media(max-width:768px){
+
+.schedule-card{
+
+padding:15px;
+
+overflow-x:auto;
+
+}
+
+table{
+
+min-width:700px;
+
+}
+
+}
+
+/*====================================
+        WATER NOTICE
+====================================*/
+
+.water-notice{
+
+    width:90%;
+
+    max-width:1000px;
+
+    margin:40px auto;
+
+}
+
+.water-notice h2{
+
+    text-align:center;
+
+    color:#f28b00;
+
+    margin-bottom:25px;
+
+}
+
+.notice-box{
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.notice-item{
+
+    display:flex;
+
+    gap:15px;
+
+    padding:18px 0;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.notice-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.notice-item i{
+
+    color:#dc3545;
+
+    font-size:22px;
+
+    margin-top:3px;
+
+}
+
+.notice-item p{
+
+    color:#555;
+
+    line-height:26px;
+
+}
+
+/*====================================
+        CONTACT
+====================================*/
+
+.contact-section{
+
+    width:90%;
+
+    max-width:1000px;
+
+    margin:30px auto;
+
+}
+
+.contact-section h2{
+
+    text-align:center;
+
+    color:#f28b00;
+
+    margin-bottom:20px;
+
+}
+
+.contact-card{
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.contact-card p{
+
+    margin:18px 0;
+
+    color:#555;
+
+    font-size:17px;
+
+}
+
+.contact-card i{
+
+    color:#f28b00;
+
+    margin-right:10px;
+
+}
+
+/*====================================
+        FOOTER
+====================================*/
+
+.footer{
+
+    background:#138808;
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:18px;
+
+    margin-top:40px;
+
+}
+
+.footer p{
+
+    font-size:15px;
+
+}
+
+/*====================================
+        MOBILE
+====================================*/
+
+@media(max-width:768px){
+
+.water-notice,
+.contact-section{
+
+    width:95%;
+
+}
+
+.notice-box,
+.contact-card{
+
+    padding:18px;
+
+}
+
+.notice-item{
+
+    gap:10px;
+
+}
+
+.contact-card p{
+
+    font-size:15px;
+
+}
+
+}

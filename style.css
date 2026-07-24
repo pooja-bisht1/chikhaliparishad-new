@@ -1,0 +1,661 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Noto Sans Devanagari',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+      margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Noto Sans Devanagari',sans-serif;
+
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    background:#f5f5f5;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    width:100%;
+    height:90px;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 15px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.menu-btn{
+    width:45px;
+    height:45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+    color:#f28b00;
+    background:#fff7ef;
+    border-radius:50%;
+}
+
+.profile{
+    width:60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.profile img{
+    width:55px;
+    height:55px;
+    object-fit:cover;
+}
+
+.title{
+    flex:1;
+    text-align:center;
+}
+
+.title h1{
+    font-size:34px;
+    color:#f28b00;
+}
+
+.title p{
+    font-size:16px;
+    color:#2fbf71;
+    margin-top:4px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+header{
+    height:80px;
+    padding:8px;
+}
+
+.menu-btn{
+    width:40px;
+    height:40px;
+    font-size:18px;
+}
+
+.profile{
+    width:45px;
+}
+
+.profile img{
+    width:42px;
+    height:42px;
+}
+
+.title h1{
+    font-size:18px;
+}
+
+.title p{
+    font-size:10px;
+}
+
+}
+
+/* ================= Notice ================= */
+
+.notice-bar{
+    width:100%;
+    height:34px;
+    background:#f28b00;
+    display:flex;
+    align-items:center;
+    padding:0 10px;
+}
+
+.notice-left i{
+    width:22px;
+    height:22px;
+    background:#fff;
+    color:#f28b00;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:12px;
+}
+
+.notice-bar marquee{
+    margin-left:10px;
+    color:#fff;
+    font-size:14px;
+    font-weight:600;
+}
+
+/* ================= Slider ================= */
+
+.slider-card{
+    width:95%;
+    margin:15px auto;
+    background:#fff;
+    border:2px solid #f28b00;
+    border-radius:14px;
+    text-align:center;
+    padding:20px;
+}
+
+.msg-icon{
+    font-size:30px;
+    color:#f28b00;
+}
+
+.slider-card h2{
+    color:#f28b00;
+    margin:8px 0;
+}
+
+.title-line{
+    width:70px;
+    height:2px;
+    background:#f28b00;
+    margin:10px auto;
+}
+
+.slider-card p{
+    color:#444;
+    line-height:24px;
+}
+
+/* ===========================
+   शहर सेवा
+=========================== */
+
+.city-service{
+     flex:1;
+    padding:15px 12px;
+    background:#f5f5f5;
+}
+
+.service-title{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:18px;
+}
+
+.service-title h2{
+    font-size:26px;
+    color:#d57b12;
+    margin:0 10px;
+    font-weight:700;
+}
+
+.line{
+    width:45px;
+    height:3px;
+    background:#28a745;
+    border-radius:10px;
+}
+
+
+/* ===========================
+   Service Grid
+=========================== */
+
+.service-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:18px;
+
+    padding:10px 6px;
+
+}
+
+
+/* ===========================
+   Service Card
+=========================== */
+
+.card{
+
+    position:relative;
+
+    background:#fff;
+
+    border-radius:14px;
+
+    text-align:center;
+
+    padding:8px;
+
+    height:90px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    overflow:hidden;
+
+}
+
+.card:hover{
+
+    transform:translateY(-4px);
+
+}
+
+
+/* Orange Corner */
+
+.corner{
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:16px;
+    height:16px;
+
+    background:#f28b00;
+
+    clip-path:polygon(0 0,100% 0,0 100%);
+
+}
+
+
+/* Green Corner */
+
+.card::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:0;
+    bottom:0;
+
+    width:16px;
+    height:16px;
+
+    background:#2fbf71;
+
+    clip-path:polygon(100% 100%,100% 0,0 100%);
+
+}
+
+
+/* Icon */
+
+.card i{
+
+    font-size:22px;
+
+    color:#f28b00;
+
+    margin-top:4px;
+
+    margin-bottom:5px;
+
+}
+
+/* Heading */
+
+.card h3{
+
+    font-size:10px;
+
+    line-height:14px;
+
+}
+
+
+/* Description */
+
+.card p{
+
+    font-size:7px;
+
+    line-height:10px;
+
+}
+
+/* ===========================
+   Desktop View
+=========================== */
+
+@media(min-width:769px){
+
+.service-grid{
+
+grid-template-columns:repeat(6,1fr);
+
+gap:20px;
+
+}
+
+.card{
+
+height:125px;
+
+padding:12px;
+
+}
+
+.card i{
+
+font-size:34px;
+
+}
+
+.card h3{
+
+font-size:15px;
+
+}
+
+.card p{
+
+font-size:11px;
+
+}
+
+}
+
+
+/* ===========================
+   City Image
+=========================== */
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media(max-width:768px){
+
+.city-image img{
+
+     width:100%;
+    height:auto;
+    display:block;
+
+}
+
+.bottom-footer{
+
+   width:100%;
+    height:40px;
+    background:#138808;
+    color:#fff;
+    text-align:center;
+    padding:12px 10px;
+    margin-top:0px;
+
+}
+
+.bottom-footer p{
+
+    font-size:13px;
+    margin: 0;
+    line-height:20px;
+
+}
+
+}
+
+
+/* ===========================
+   Desktop
+=========================== */
+
+@media(min-width:769px){
+
+.city-image img{
+
+    height:300px;
+
+}
+
+.bottom-footer{
+
+    padding:22px;
+
+}
+
+.bottom-footer p{
+
+    font-size:22px;
+
+}
+
+}
+
+.card-link{
+    display:block;
+    text-decoration:none;   /* Underline remove */
+    color:inherit;
+}
+
+.card-link:hover{
+    text-decoration:none;
+}
+
+.card-link:visited{
+    color:inherit;
+    text-decoration:none;
+}
+
+.card-link:active{
+    text-decoration:none;
+}
+
+
+/* ================= CITY IMAGE ================= */
+
+.city-image{
+    width:100%;
+    margin:0;
+    padding:0;
+    line-height:0;
+    overflow:hidden;
+}
+
+.city-image img{
+    width:100%;
+    height:auto;
+    display:block;
+    margin:0;
+    padding:0;
+    object-fit:cover;
+}
+
+
+/* ================= FOOTER ================= */
+
+.bottom-footer{
+
+    width:100%;
+    height:55px;
+    background:#168b32;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin:0;
+    padding:0;
+
+}
+
+
+.bottom-footer p{
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    margin:0;
+
+}
+
+
+.bottom-footer span{
+
+    margin:0 12px;
+
+    color:white;
+
+}
+
+
+.left-profile img{
+    background:#fff;
+}
+
+
+/*================ INSTALL POPUP ================*/
+
+.install-popup{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.55);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:999999;
+
+}
+
+.popup-box{
+
+    width:280px;
+
+    background:#fff;
+
+    border-radius:15px;
+
+    padding:18px;
+
+    text-align:center;
+
+    animation:popup .35s ease;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.popup-box img{
+
+    width:60px;
+
+    height:60px;
+
+    margin-bottom:10px;
+
+}
+
+.popup-box h2{
+
+    color:#ef7d00;
+     font-size:22px;
+
+    margin-bottom:10px;
+
+}
+
+.popup-box p{
+
+    color:#555;
+
+    font-size:14px;
+
+    line-height:20px;
+
+    margin-bottom:15px;
+
+}
+
+#installBtn{
+
+    width:100%;
+
+    height:42px;
+
+    font-size:15px;
+
+    border:none;
+
+    background:#ef7d00;
+
+    color:#fff;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    margin-bottom:8px;
+
+}
+
+#closeBtn{
+
+    width:100%;
+
+    height:42px;
+
+    font-size:15px;
+
+    border:none;
+
+    background:#ddd;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+@keyframes popup{
+
+    from{
+
+        transform:scale(.8);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}

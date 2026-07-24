@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="mr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>तक्रार नोंदणी</title>
+
+<link rel="stylesheet" href="complaints.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Header -->
+
+<header class="complaint-header">
+
+    <a href="index.html" class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+
+    <h2>तक्रार नोंदणी</h2>
+
+    <div></div>
+
+</header>
+
+
+<!-- Complaint Form -->
+
+<section class="complaint-section">
+
+<div class="complaint-card">
+
+<div class="form-title">
+
+<i class="fa-solid fa-triangle-exclamation"></i>
+
+<h2>तक्रार नोंदवा</h2>
+
+<p>कृपया खालील माहिती अचूक भरा.</p>
+
+</div>
+
+<form action="save.php" method="POST" enctype="multipart/form-data">
+
+<!-- Mobile -->
+
+<div class="form-group">
+
+<label>
+<i class="fa-solid fa-phone"></i>
+मोबाईल क्रमांक
+</label>
+
+<input type="text"
+name="mobile"
+placeholder="मोबाईल क्रमांक टाका"
+required>
+
+</div>
+
+<!-- Name -->
+
+<div class="form-group">
+
+<label>
+<i class="fa-solid fa-user"></i>
+पूर्ण नाव
+</label>
+
+<input type="text"
+name="name"
+placeholder="पूर्ण नाव टाका"
+required>
+
+</div>
+
+<!-- Address -->
+
+<div class="form-group">
+
+<label>
+<i class="fa-solid fa-location-dot"></i>
+पत्ता
+</label>
+
+<input type="text"
+name="address"
+placeholder="संपूर्ण पत्ता"
+required>
+
+</div>
+
+<!-- Ward -->
+
+<div class="form-group">
+
+<label>
+<i class="fa-solid fa-map"></i>
+प्रभाग क्रमांक
+</label>
+
+<select name="ward">
+
+<option>प्रभाग निवडा</option>
+<option>१</option>
+<option>२</option>
+<option>३</option>
+<option>४</option>
+<option>५</option>
+<option>६</option>
+<option>७</option>
+<option>८</option>
+<option>९</option>
+<option>१०</option>
+
+</select>
+
+</div>
+
+<!-- Complaint -->
+
+<div class="form-group">
+
+<label>
+<i class="fa-solid fa-list"></i>
+तक्रारीचा प्रकार
+</label>
+
+<select name="complaint">
+
+<option>तक्रार निवडा</option>
+
+<option>स्वच्छता</option>
+<option>रस्ता</option>
+<option>पाणी पुरवठा</option>
+<option>गटार</option>
+<option>स्ट्रीट लाईट</option>
+<option>इतर</option>
+
+</select>
+
+</div>
+
+<!-- Details -->
+
+<div class="form-group">
+
+<label>
+
+<i class="fa-solid fa-pen"></i>
+
+तक्रारीचा तपशील
+
+</label>
+
+<textarea
+name="details"
+rows="5"
+placeholder="तुमची तक्रार येथे लिहा..."></textarea>
+
+</div>
+
+<!-- Photo -->
+
+<div class="form-group">
+
+<label>
+
+<i class="fa-solid fa-camera"></i>
+
+फोटो अपलोड
+
+</label>
+
+<input
+type="file"
+name="photo">
+
+</div>
+
+<button class="submit-btn">
+
+<i class="fa-solid fa-paper-plane"></i>
+
+तक्रार नोंदवा
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+</body>
+
+</html>

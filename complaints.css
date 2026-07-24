@@ -1,0 +1,474 @@
+/*====================================
+        RESET
+====================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Noto Sans Devanagari',sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+}
+
+/*====================================
+        HEADER
+====================================*/
+
+.complaint-header{
+
+    width:100%;
+    height:75px;
+
+    background:#f28b00;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 20px;
+
+    position:sticky;
+    top:0;
+
+    z-index:1000;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+
+}
+
+.back-btn{
+
+    color:#fff;
+    font-size:24px;
+    text-decoration:none;
+
+}
+
+.complaint-header h2{
+
+    color:#fff;
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+.complaint-header div{
+
+    width:24px;
+
+}
+
+/*====================================
+        FORM SECTION
+====================================*/
+
+.complaint-section{
+
+    width:100%;
+
+    padding:35px 15px;
+
+}
+
+.complaint-card{
+
+    width:100%;
+    max-width:760px;
+
+    margin:auto;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.10);
+
+}
+
+/*====================================
+        TITLE
+====================================*/
+
+.form-title{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.form-title i{
+
+    width:80px;
+    height:80px;
+
+    background:#fff6ea;
+
+    color:#f28b00;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin:auto;
+
+    font-size:35px;
+
+}
+
+.form-title h2{
+
+    color:#f28b00;
+
+    margin-top:15px;
+
+    font-size:30px;
+
+}
+
+.form-title p{
+
+    color:#666;
+
+    margin-top:8px;
+
+    font-size:15px;
+
+}
+
+/*====================================
+        FORM GROUP
+====================================*/
+
+.form-group{
+
+    margin-bottom:22px;
+
+}
+
+.form-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#444;
+
+}
+
+.form-group label i{
+
+    color:#f28b00;
+
+    margin-right:8px;
+
+}
+
+/*====================================
+        INPUT
+====================================*/
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+    width:100%;
+
+    border:1.5px solid #dcdcdc;
+
+    border-radius:12px;
+
+    padding:14px 16px;
+
+    font-size:15px;
+
+    background:#fff;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+/*====================================
+        PLACEHOLDER
+====================================*/
+
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+
+    color:#999;
+
+}
+
+/*====================================
+        FOCUS
+====================================*/
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+
+    border-color:#f28b00;
+
+    box-shadow:0 0 10px rgba(242,139,0,.20);
+
+}
+
+/*====================================
+        SELECT
+====================================*/
+
+.form-group select{
+
+    cursor:pointer;
+
+}
+
+/*====================================
+        TEXTAREA
+====================================*/
+
+.form-group textarea{
+
+    height:140px;
+
+    resize:none;
+
+    line-height:24px;
+
+}
+
+/*====================================
+        FILE UPLOAD
+====================================*/
+
+.form-group input[type=file]{
+
+    padding:12px;
+
+    border:2px dashed #f28b00;
+
+    background:#fffaf2;
+
+    cursor:pointer;
+
+}
+
+.form-group input[type=file]:hover{
+
+    background:#fff4df;
+
+}
+
+
+/*====================================
+        SUBMIT BUTTON
+====================================*/
+
+.submit-btn{
+
+    width:100%;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:linear-gradient(135deg,#f28b00,#ff9f1a);
+
+    color:#fff;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    margin-top:15px;
+
+    transition:.3s;
+
+    box-shadow:0 6px 15px rgba(242,139,0,.35);
+
+}
+
+.submit-btn:hover{
+
+    transform:translateY(-2px);
+
+    background:linear-gradient(135deg,#e67e00,#f28b00);
+
+    box-shadow:0 10px 20px rgba(242,139,0,.45);
+
+}
+
+.submit-btn:active{
+
+    transform:scale(.98);
+
+}
+
+.submit-btn i{
+
+    margin-right:10px;
+
+}
+
+/*====================================
+        CARD HOVER
+====================================*/
+
+.complaint-card{
+
+    transition:.3s;
+
+}
+
+.complaint-card:hover{
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+/*====================================
+        MOBILE
+====================================*/
+
+@media(max-width:768px){
+
+.complaint-header{
+
+height:65px;
+
+padding:0 15px;
+
+}
+
+.back-btn{
+
+font-size:20px;
+
+}
+
+.complaint-header h2{
+
+font-size:20px;
+
+}
+
+.complaint-section{
+
+padding:18px 10px;
+
+}
+
+.complaint-card{
+
+padding:20px 15px;
+
+border-radius:15px;
+
+}
+
+.form-title i{
+
+width:65px;
+
+height:65px;
+
+font-size:28px;
+
+}
+
+.form-title h2{
+
+font-size:24px;
+
+}
+
+.form-title p{
+
+font-size:14px;
+
+}
+
+.form-group label{
+
+font-size:14px;
+
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+font-size:14px;
+
+padding:12px;
+
+}
+
+.form-group textarea{
+
+height:120px;
+
+}
+
+.submit-btn{
+
+height:50px;
+
+font-size:16px;
+
+}
+
+}
+
+/*====================================
+        DESKTOP
+====================================*/
+
+@media(min-width:769px){
+
+.complaint-section{
+
+padding:40px;
+
+}
+
+.complaint-card{
+
+padding:40px;
+
+}
+
+.form-title h2{
+
+font-size:32px;
+
+}
+
+.form-group input,
+.form-group select{
+
+height:52px;
+
+}
+
+}
