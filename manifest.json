@@ -1,9 +1,9 @@
 {
-  "id": "/chikhaliparishad/",
+  "id": "/chikhaliparishad-project/",
   "name": "चिखली नगर परिषद",
   "short_name": "नगर परिषद",
-  "start_url": "/chikhaliparishad/",
-  "scope": "/chikhaliparishad/",
+  "start_url": "/chikhaliparishad-project/",
+  "scope": "/chikhaliparishad-project/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ef7d00",
