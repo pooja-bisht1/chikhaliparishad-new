@@ -74,6 +74,21 @@ body{
 
     padding:35px 15px;
 
+    min-height:calc(100vh - 75px);
+
+    background:
+    linear-gradient(
+        rgba(255,255,255,0.82),
+        rgba(255,255,255,0.82)
+    ),
+    url("images/bubbles.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
 }
 
 .complaint-card{
@@ -472,3 +487,4 @@ height:52px;
 }
 
 }
+
