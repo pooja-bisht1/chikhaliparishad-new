@@ -58,3 +58,29 @@ setInterval(() => {
     text.innerText = slides[index].text;
 
 },5000);
+
+
+/* ================= SIDEBAR MENU ================= */
+
+const menuBtn = document.querySelector(".menu-btn");
+const sidebar = document.getElementById("sidebar");
+const overlay = document.getElementById("overlay");
+const closeMenu = document.getElementById("closeMenu");
+
+// Open Menu
+menuBtn.addEventListener("click", () => {
+    sidebar.classList.add("active");
+    overlay.classList.add("active");
+});
+
+// Close Button
+closeMenu.addEventListener("click", () => {
+    sidebar.classList.remove("active");
+    overlay.classList.remove("active");
+});
+
+// Click Outside
+overlay.addEventListener("click", () => {
+    sidebar.classList.remove("active");
+    overlay.classList.remove("active");
+});
