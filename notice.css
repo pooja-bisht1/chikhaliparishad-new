@@ -158,6 +158,8 @@ line-height:28px;
     border-left:6px solid #f28b00;
 
     transition:.3s;
+    position: relative;
+    overflow: hidden;
 
 }
 
@@ -425,6 +427,139 @@ gap:10px;
 .contact-card p{
 
 font-size:15px;
+
+}
+
+}
+
+/*==========================
+    PREMIUM GLOW EFFECT
+==========================*/
+
+.notice-card::before{
+
+content:"";
+
+position:absolute;
+
+width:220px;
+height:220px;
+
+background:radial-gradient(circle,
+rgba(242,139,0,.18),
+transparent 70%);
+
+top:-120px;
+right:-120px;
+
+border-radius:50%;
+
+animation:glowMove 6s ease-in-out infinite;
+
+pointer-events:none;
+
+}
+
+.notice-card::after{
+
+content:"";
+
+position:absolute;
+
+width:130px;
+height:130px;
+
+background:radial-gradient(circle,
+rgba(19,136,8,.12),
+transparent 70%);
+
+bottom:-70px;
+left:-70px;
+
+border-radius:50%;
+
+animation:glowMove2 8s ease-in-out infinite;
+
+pointer-events:none;
+
+}
+
+@keyframes glowMove{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(18px) scale(1.15);
+
+}
+
+}
+
+@keyframes glowMove2{
+
+0%,100%{
+
+transform:translateX(0);
+
+}
+
+50%{
+
+transform:translateX(25px);
+
+}
+
+}
+
+/*==========================
+      WATER CARD
+==========================*/
+
+.water-card::before{
+
+content:"";
+
+position:absolute;
+
+top:-80px;
+left:20px;
+
+width:8px;
+height:8px;
+
+background:#4FC3F7;
+
+border-radius:50%;
+
+opacity:.45;
+
+box-shadow:
+45px 35px #4FC3F7,
+100px 10px #4FC3F7,
+160px 55px #4FC3F7,
+220px 20px #4FC3F7,
+280px 70px #4FC3F7;
+
+animation:waterDrop 6s linear infinite;
+
+}
+
+@keyframes waterDrop{
+
+0%{
+
+transform:translateY(-40px);
+
+}
+
+100%{
+
+transform:translateY(420px);
 
 }
 
