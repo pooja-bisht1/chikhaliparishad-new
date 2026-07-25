@@ -641,3 +641,163 @@ transform:rotate(0deg);
 }
 
 }
+
+/*==========================
+      TENDER CARD EFFECT
+==========================*/
+
+.tender-card::before{
+
+content:"📄";
+
+position:absolute;
+
+top:20px;
+right:25px;
+
+font-size:32px;
+
+opacity:.08;
+
+animation:paperFloat 6s ease-in-out infinite;
+
+}
+
+.tender-card::after{
+
+content:"📑";
+
+position:absolute;
+
+bottom:25px;
+left:20px;
+
+font-size:28px;
+
+opacity:.08;
+
+animation:paperFloat2 8s ease-in-out infinite;
+
+}
+
+@keyframes paperFloat{
+
+0%,100%{
+
+transform:translateY(0) rotate(0deg);
+
+}
+
+50%{
+
+transform:translateY(-15px) rotate(8deg);
+
+}
+
+}
+
+@keyframes paperFloat2{
+
+0%,100%{
+
+transform:translateY(0) rotate(0deg);
+
+}
+
+50%{
+
+transform:translateY(15px) rotate(-8deg);
+
+}
+
+}
+
+
+/*==========================
+      CLEAN CARD EFFECT
+==========================*/
+
+.clean-card::before{
+
+content:"";
+
+position:absolute;
+
+width:12px;
+height:12px;
+
+background:rgba(76,175,80,.18);
+
+border-radius:50%;
+
+top:25px;
+left:30px;
+
+box-shadow:
+60px 40px rgba(76,175,80,.18),
+140px 20px rgba(76,175,80,.18),
+220px 60px rgba(76,175,80,.18),
+100px 120px rgba(76,175,80,.18);
+
+animation:bubbleFloat 6s ease-in-out infinite;
+
+}
+
+.clean-card::after{
+
+content:"";
+
+position:absolute;
+
+width:6px;
+height:6px;
+
+background:#FFD54F;
+
+border-radius:50%;
+
+top:80px;
+right:60px;
+
+box-shadow:
+40px 30px #FFD54F,
+-50px 80px #FFD54F,
+90px 100px #FFD54F;
+
+animation:sparkMove 4s ease-in-out infinite;
+
+}
+
+@keyframes bubbleFloat{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-18px);
+
+}
+
+}
+
+@keyframes sparkMove{
+
+0%,100%{
+
+opacity:.3;
+transform:scale(1);
+
+}
+
+50%{
+
+opacity:.8;
+transform:scale(1.5);
+
+}
+
+}
